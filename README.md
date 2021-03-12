@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://rhulog.github.io/FAQpage/
 
 ## My process
 Built the site mobile first. Create the HTML markup, and added the styles for the accordion menu. Tied it up with some Javascript for the dropdown toggle effect.
