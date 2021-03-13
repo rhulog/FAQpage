@@ -1,13 +1,3 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-*/
-
 *{
     padding: 0;
     margin: 0;
@@ -128,11 +118,148 @@ section{
     color: hsl(228, 45%, 44%); 
 }
 
-
-@media only screen and (max-width: 425px){
+@media only screen and (min-width: 280px) and (max-width: 320px){
     .container{
-        background-position: 20px -140px;
-        background-size: 250px;
+        background-position: 25px -80px;
+        background-size: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 70vw;
+    }
+    .image-container::before{
+        content: url('images/illustration-woman-online-mobile.svg');
+        position: absolute;
+        top: -130px;
+        left: 110px;
+        transform: scale(0.6);
+    }
+    .image-container::after{
+        content: '';
+    }
+    .accordion header{
+        text-align: center;
+    }
+    .contentA .label::after,
+    .contentA.active .label::after{
+        position: absolute;
+        left: 140px;
+    }
+    
+}
+@media only screen and (min-width: 320px) and (max-width: 355px){
+    .container{
+        background-position: 30px -70px;
+        background-size: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .image-container{
+        width: 100vw;
+    }
+    .image-container::after{
+        content: url('images/illustration-woman-online-mobile.svg');
+        position: absolute;
+        top: -110px;
+        left: 25px;
+        transform: scale(0.7);
+    }
+    .image-container::before{
+        content:'';
+    }
+
+    .accordion header{
+        text-align: center;
+    }
+    .accordion{
+        margin-top: 50px;
+    }
+    
+    .contentA .label::after,
+    .contentA.active .label::after{
+        position: absolute;
+        left: 170px;
+    }
+}
+@media only screen and (min-width: 355px) and (max-width: 375px){
+    .container{
+        background-position: 40px -90px;
+        background-size: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .image-container{
+        width: 100vw;
+    }
+    .image-container::after{
+        content: url('images/illustration-woman-online-mobile.svg');
+        position: absolute;
+        top: -140px;
+        left: 40px;
+        transform: scale(0.7);
+    }
+    .image-container::before{
+        content:'';
+    }
+
+    .accordion header{
+        text-align: center;
+    }
+    .accordion{
+        margin-top: 50px;
+    }
+    
+    .contentA .label::after,
+    .contentA.active .label::after{
+        position: absolute;
+        left: 200px;
+    }
+}
+@media only screen and (min-width: 375px) and (max-width: 410px){
+    .container{
+        background-position: 30px -70px;
+        background-size: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .image-container{
+        width: 100vw;
+    }
+    .image-container::after{
+        content: url('images/illustration-woman-online-mobile.svg');
+        position: absolute;
+        top: -110px;
+        left: 25px;
+        transform: scale(0.7);
+    }
+    .image-container::before{
+        content:'';
+    }
+
+    .accordion header{
+        text-align: center;
+    }
+    .accordion{
+        margin-top: 50px;
+    }
+    
+    .contentA .label::after,
+    .contentA.active .label::after{
+        position: absolute;
+        left: 200px;
+    }
+}
+@media only screen and (min-width: 411px) and (max-width: 425px){
+    .container{
+        background-position: 30px -100px;
+        background-size: 230px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -145,7 +272,7 @@ section{
         content: url('images/illustration-woman-online-mobile.svg');
         position: absolute;
         top: -130px;
-        left: 60px;
+        left: 55px;
         transform: scale(0.9);
     }
     .image-container::before{
@@ -158,14 +285,39 @@ section{
     .accordion{
         margin-top: 50px;
     }
-    .contentA .label::after{
+    
+    .contentA .label::after,
+    .contentA.active .label::after{
         position: absolute;
-        top: 20px;
-        right: -10px;
+        left: 230px;
     }
 }
-
-@media only screen and (min-width: 426px ) and (max-width: 768px){
+@media only screen and (min-width: 426px ) and (max-width: 545px){
+    .container{
+        background: url('images/bg-pattern-desktop.svg') no-repeat;
+        background-size: cover;
+        background-position: -20px 100px;
+        background-size: 190px;
+        background-color: #fff;
+    }
+    .image-container::before{
+        content: '';
+    }
+    .image-container::after{
+        content: url('images/illustration-woman-online-mobile.svg');
+        position: absolute;
+        top: 80px;
+        left: -90px;
+        transform: scale(0.7);
+    }
+    .contentA .label::after,
+    .contentA.active .label::after{
+        position: absolute;
+        left: 180px;
+    }
+    
+}
+@media only screen and (min-width: 545px ) and (max-width: 768px){
     .container{
         background: url('images/bg-pattern-desktop.svg') no-repeat;
         background-size: cover;
@@ -179,13 +331,12 @@ section{
         right: 130px;
     }
     .image-container::after{
-        transform: scale(0.48);
+        transform: scale(0.3);
         position: absolute;
         top: 100px;
         left: -100px;
     }
 }
-
 @media only screen and (min-width: 769px ) and (max-width: 1180px){
     .container{
         background: url('images/bg-pattern-desktop.svg') no-repeat;
